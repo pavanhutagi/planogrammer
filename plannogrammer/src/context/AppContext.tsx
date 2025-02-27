@@ -1,13 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode } from "react";
-
-interface AppContextType {
-  height: string;
-  setHeight: (height: string) => void;
-  width: string;
-  setWidth: (width: string) => void;
-}
+import { AppContextType } from "@/types/app-context-type";
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
